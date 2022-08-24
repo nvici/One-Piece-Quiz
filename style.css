@@ -24,6 +24,49 @@ body {
     text-decoration: none;
 }
 
+.data {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.quiz-sect {
+    padding: 4rem;
+}
+
+#clock {
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
 button {
     background-color: #ffff009d;
     color: black;
@@ -53,4 +96,12 @@ button:hover {
 #start-btn {
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 50px 8px rgba(67, 67, 67, 0.117);
+}
+
+
+.initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
