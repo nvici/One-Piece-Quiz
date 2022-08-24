@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+#top-btn {
+    border-radius: 15px 15px 0 0;
+}
+
+#high-score {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background-color: #ffff009d;
+    color: black;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+}
+
+button:hover {
+    background-color: red;
+}
+
+#intro {
+    background-color: white;
+    box-shadow: 0 0 50px 8px rgba(67, 67, 67, 0.117);
+    
+}
+
+.intro-p {
+    font-size: 30px;
+    height: 200px;
+}
+
+#start-btn {
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 50px 8px rgba(67, 67, 67, 0.117);
+}
