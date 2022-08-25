@@ -1,11 +1,12 @@
+/* Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+/* body styling of the initial screen */
 body {
     background-color: darkgray;
     display: flex;
@@ -16,7 +17,7 @@ body {
     overflow: hidden;
     margin: 0;
 }
-
+/* header styles */
 h1 {
     background-color: #ffff009d;
     color: black;
@@ -24,7 +25,7 @@ h1 {
     margin-top: 100px;
     padding: 1.3rem;
 }
-
+/* styling of the inputed data */
 #high-score-list {
     background-color: #ffff009d;
     color: black;
@@ -33,7 +34,7 @@ h1 {
     border-radius: 10px;
 }
 
-
+/* styling of the button that takes user home*/
 button {
     background-color: #ffff009d;
     color: black;
@@ -52,6 +53,5 @@ button:hover {
 
 
 .home-page-btn {
-    color: white;
     text-decoration: none;
 }

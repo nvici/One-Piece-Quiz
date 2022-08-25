@@ -1,4 +1,4 @@
-
+//we have the data pushed to the initial.html pagge with the score and initials of the user
 var highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 var highScoresList = document.querySelector('#high-score-list');

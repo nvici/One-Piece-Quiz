@@ -8,15 +8,16 @@
     <title>One Piece Quiz</title>
 </head>
 <body>
-
+<!--div of the outer container-->
     <div class="outer-container">
 
         <div>
+            <!--this is the highscore button that is linked to the highscore page-->
             <div>
                 <a href="initial.html" id="high-score"> <button id="top-btn">High Score</button>    </a>
                     
             </div>
-
+<!--Our main container with quiz instructions-->
             <div class="welcome-container" id="welcome">
                 <div class="welcome-header">
                     <h2 id="intro">
@@ -35,13 +36,13 @@
                         </ul>
                     </h2>
                 </div>
-
+<!--start button that begins the quiz-->
                 <button id="start-btn">Start</button>
             </div>
-
+<!--The main data that has our format of our questions-->
             <div class="data hide" id="quiz">
                 <div class="quiz-sect">
-                
+                <!--The timer-->
                 <p id="clock">Watch the Clock!</p>
                 <h2 id="question">Qustion Text</h2>
                 <ul>
@@ -68,10 +69,12 @@
 
                 
             </div>
-            
+            <!--This button submits each answer the user provides-->
             <button id="submit">Submit</button>
         </div>
-
+<!--This is end of quiz container to input initials-->
+<!--Also this container has the submit btn which submits initials to local storage-->
+<!--Lastly have the reload button that reloads to the start page-->
         <div class="data hide" id="score-form" >
             <h2 id="score"></h2>
             <form id="initials-form" class="initials">

@@ -1,10 +1,11 @@
+/* Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
+/* styling of the body container */
 body {
     background-color: darkgray;
     display: flex;
@@ -14,7 +15,7 @@ body {
     overflow: hidden;
     margin: 0;
 }
-
+/* the top bar, contains the timer and highscore  */
 #top-btn {
     border-radius: 15px 15px 0 0;
 }
@@ -23,7 +24,7 @@ body {
     color: white;
     text-decoration: none;
 }
-
+/* the styling of the container that holds data */
 .data {
     background-color: whitesmoke;
     border-radius: 0 0 10px 10px;
@@ -53,6 +54,7 @@ h2 {
     margin: 0;
 }
 
+/* styling of the answers */
 ul {
     list-style: none;
     padding: 0;
@@ -66,7 +68,7 @@ ul li {
 ul li label {
     cursor: pointer;
 }
-
+/* button styling and hovering capabilities */
 button {
     background-color: #ffff009d;
     color: black;
@@ -81,7 +83,7 @@ button {
 button:hover {
     background-color: red;
 }
-
+/* styling of the inner container containing data */
 #intro {
     background-color: white;
     box-shadow: 0 0 50px 8px rgba(67, 67, 67, 0.117);
@@ -92,20 +94,20 @@ button:hover {
     font-size: 30px;
     height: 50px;
 }
-
+/* styling of the start button */
 #start-btn {
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 50px 8px rgba(67, 67, 67, 0.117);
 }
 
-
+/* stylying at the end of quiz screen to input initials */
 .initials {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
 }
-
+/* styling of the submit button at the end of the quiz */
 .submit-btn {
     color: black;
     background-color: #ffff009d;    

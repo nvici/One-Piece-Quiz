@@ -1,3 +1,4 @@
+//questions prompted to the user with answer choices
 var quizData = [
     {
         question: 'Who is the Captain of the Strawhat Pirates?',
@@ -32,7 +33,7 @@ var quizData = [
         correct: 'd',
     },
 ];
-
+//timer is displayed at 60 seconds
 var countdown = document.getElementById('clock');
 var time = 60;
 
@@ -46,7 +47,7 @@ function updateCountDown() {
     }
     countdown.innerHTML = `${time}`;
 }
-
+//data gives function to the quiz
 var quiz = document.getElementById('quiz');
 var answerEls = document.querySelectorAll('.answer');
 var questionEl = document.getElementById('question');
@@ -59,6 +60,7 @@ var startBtn = document.getElementById('start-btn');
 
 var currentQuiz = 0;
 var score = 0;
+//this event listener starts when user 'click' start btn
 
 startBtn.addEventListener('click', function () {
 
@@ -71,7 +73,7 @@ startBtn.addEventListener('click', function () {
 
     loadQuiz();
 })
-
+//this loads the quiz
 function loadQuiz() {
 
     deselectAnswers();
@@ -84,7 +86,7 @@ function loadQuiz() {
     cAnswer.innerText = currentQuizData.c
     dAnswer.innerText = currentQuizData.d
 }
-
+// systems response to right or wrong answers
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false);
 }
@@ -98,7 +100,7 @@ function getSelected() {
     })
     return answer
 }
-
+//this will give user either a score or time reduction
 submitBtn.addEventListener('click', () => {
     var answer = getSelected()
     console.log(answer);
@@ -121,7 +123,7 @@ submitBtn.addEventListener('click', () => {
         loadQuiz()
     }
 })
-
+//this will give user score if they answer all correctly, they will get a surprise
 function endGame() {
     quiz.innerHTML = '';
     var h2 = document.querySelector('#score');
@@ -141,7 +143,7 @@ var highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 var initials_form = document.querySelector('#initials-form');
 
-
+//submission data to store in local storage
 initials_form.addEventListener('submit', function() {
     var initials = document.querySelector('#initials');
     var scoreObj = {
@@ -153,7 +155,7 @@ initials_form.addEventListener('submit', function() {
     localStorage.setItem('highScores', JSON.stringify(highScores));
 })
 
-
+// this takes user back to homepage, if they do not submit score
 var reload = document.querySelector('#reload')
 reload.addEventListener('click', function(){
     location.reload()
