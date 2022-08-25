@@ -17,7 +17,7 @@
                     
             </div>
 
-            <div class="welcome-container">
+            <div class="welcome-container" id="welcome">
                 <div class="welcome-header">
                     <h2 id="intro">
                         <ul>
@@ -39,7 +39,7 @@
                 <button id="start-btn">Start</button>
             </div>
 
-            <div class="data hide">
+            <div class="data hide" id="quiz">
                 <div class="quiz-sect">
                 
                 <p id="clock">Watch the Clock!</p>
@@ -47,20 +47,20 @@
                 <ul>
                     <ul>
                         <li>
-                           
-                            <label>Answer</label>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a-answer">Answer</label>
                         </li>
                         <li>
-                            
-                            <label>Answer</label>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b-answer">Answer</label>
                         </li>
                         <li>
-                           
-                            <label>Answer</label>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c-answer">Answer</label>
                         </li>
                         <li>
-                            
-                            <label>Answer</label>
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" id="d-answer">Answer</label>
                         </li>
 
                     </ul>
@@ -72,16 +72,16 @@
             <button id="submit">Submit</button>
         </div>
 
-        <div class="data hide" >
+        <div class="data hide" id="score-form" >
             <h2 id="score"></h2>
             <form id="initials-form" class="initials">
                 <label for="initials">Initials:</label>
                 <a href="#" class="initials">                    
                 </a>
             </form> 
-            <button> Reload</button>       
+            <button id="reload"> Reload</button>       
         </div>
     </div>
-    
+    <script src="./script.js"></script>
 </body>
 </html>
