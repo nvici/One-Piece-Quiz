@@ -106,3 +106,14 @@ button:hover {
     padding: 10px;
 }
 
+.submit-btn {
+    color: black;
+    background-color: #ffff009d;    
+    border: 0 0 10px 10px;
+    width: 100px;
+
+}
+
+.submit-btn:hover{
+    background-color: red;
+}
