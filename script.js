@@ -107,7 +107,7 @@ submitBtn.addEventListener('click', () => {
             score++
         }
         else {
-            time -= 10;
+            time -= 15;
         }
     } else {
         return
@@ -127,6 +127,10 @@ function endGame() {
     var h2 = document.querySelector('#score');
 
     h2.innerText = `You answered ${score}/${quizData.length} questions correctly`
+
+    if (score === quizData.length) {
+        h2.innerText = `You answered ${score}/${quizData.length} questions correctly and obtained THE ONE PIECE!`
+    }
 
     var form = document.querySelector('#score-form');
 
